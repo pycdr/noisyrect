@@ -1,4 +1,4 @@
-# noisyrect
+#--noisyrect--#
 class noisyrect:
   """hello my rect! jump!"""
   __creator__ = "@pycdr"
