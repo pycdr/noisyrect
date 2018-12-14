@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>noisyrect | [free,open-source,python!]</title>
+    <meta charser="UTF-8">
+    <meta name="descrption" content="hello my rect! help me!">
+    <meta name="keywords" content="noisyrect, noisy, rect, pycdr, python, free">
+    <meta name="author" content="pycdr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+@font-face{
+	font-family: lovelo;
+	src: url(font.otf);
+}
+body{
+	font-family: lovelo;
+}
+#about{
+	background-image: url(screenshot.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+  </style>
+  <script>
+$(document).ready(function(){
+	$("#nr-hover1").mouseenter(function(){
+		$(this).animate({
+			height: "+=20px"
+		},200);
+		$(this).append("home");
+	});
+	$("#nr-hover1").mouseleave(function(){
+                $(this).animate({
+                        height: "-=20px"
+                },200);
+                $(this).html("<i class=\"material-icons\">home</i>");
+        });
+	//-----------------//
+	$("#nr-hover2").mouseenter(function(){
+                $(this).animate({
+                        height: "+=20px"
+                },200);
+                $(this).append("about");
+        });
+	$("#nr-hover2").mouseleave(function(){
+                $(this).animate({
+                        height: "-=20px"
+                },200);
+                $(this).html("<i class=\"material-icons\">info</i>");
+	});
+	//-----------------//
+	$("#nr-hover3").mouseenter(function(){
+                $(this).animate({
+                        height: "+=20px"
+                },200);
+                $(this).append("contact");
+        });
+	$("#nr-hover3").mouseleave(function(){
+                $(this).animate({
+                        height: "-=20px"
+                },200);
+		$(this).html("<i class=\"material-icons\">contacts</i>");
+	});
+});
+  </script>
+</head>
+<body>
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-green" style="width:10%">
+  <!-- <img src="" style="width:100%"> -->
+  <svg class="w3-center" style="width:136">
+    <polygon points="0,40 96,0 136,96 40,136" style="fill:blue;stroke:red;stroke-width:5;">
+  </svg>
+  <a href="#" id="nr-hover1" class="w3-bar-item w3-button w3-padding-large w3-blue">
+    <i class="material-icons">home</i>
+  </a>
+  <a href="#about" id="nr-hover2" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="material-icons">info</i>
+  </a>
+  <a href="#contact" id="nr-hover3" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="material-icons">contacts</i>
+  </a>
+</nav>
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">about</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">contact</a>
+  </div>
+</div>
+<div id="main" style="padding-left:10%">
+  <header class="w3-container w3-padding-32 w3-center w3-indigo" id="home">
+    <h1 style="font-family:lovelo">noisyrect</h1>
+    <p>free, open-source, python!</p>
+  </header>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-black" style="font-family:lovelo">How am I!?</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-black">hello my rect!My name is noisyrect!I am a rect.<br>
+	I can jump!<br>
+	I read any .wav song!<br>
+	I show any .icon image!<br>
+	I am keyboard friend!<br>
+	I am free & open-source!<br>
+    </p>
+    <hr>
+    <h3 class="w3-padding-16 w3-text-black" style="font-family:lovelo">for python programmers and developers</h3>
+    <p class="w3-wide">libraries</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%">pygame,webbrowser,os,sys</div>
+      <p class="w3-wide">language</p>
+      <div class="w3-dark-grey" style="height:28px;width:20%">python</div>
+      <p class="w3-wide">font</p>
+      <div class="w3-dark-grey" style="height:28px;width:30%">lovelo(in <a href="http://www.fontfabric.com/lovelo-font/">here</a>)</div>
+    </div><br>    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><i class="material-icons">security</i>open source</span><br>
+        not rat,virus,...
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><i class="material-icons">public</i>free</span><br>
+        not buy cash
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><i class="material-icons">settings</i>python!</span><br>
+        programmed by python language (and pygame library)
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><i class="material-icons">book</i>easy document</span><br>
+        easy shortcut keys
+      </div>
+    </div>
+    <!--<button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>-->
+    <h3 class="w3-padding-16 w3-text-black" style="font-family:lovelo">attributs</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-black w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">windows</li>
+          <i class="material-icons">done</i><li class="w3-padding-16">autorun (AUTORUN.inf)</li>
+          <i class="material-icons">done</i><li class="w3-padding-16">icon</li>
+          <i class="material-icons">cancel</i><li class="w3-padding-16">slower than Linux</li>
+          <i class="material-icons">cancel</i><li class="w3-padding-16">for run python or pyc file, you should install python</li>
+          <i class="material-icons">done</i><li class="w3-padding-16">easy shortcut keys</li>
+          <!--<li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>-->
+        </ul>
+      </div>
+      <div class="w3-black w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">linux</li>
+          <i class="material-icons">done</i><li class="w3-padding-16">can run directly python or pyc file on most of linux destroys</li>
+          <i class="material-icons">done</i><li class="w3-padding-16">faster than Windows</li>
+          <i class="material-icons">cancel</i><li class="w3-padding-16">usually icon file not open and set on top of window</li>
+          <i class="material-icons">done</i><li class="w3-padding-16">easy shortcut keys</li>
+          <!--<li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    </div>
+  </div> -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 id="contact" style="font-family:lovelo" class="w3-text-black">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> #ID</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> telegram channel: @pycdr_pycdr</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> telegram,github,gitlab: @pycdr</p>
+    </div><br>
+    <!-- <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  </div>
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-dark-gray">
+    <ul class="w3-small w3-left">
+      <li><a class="w3-hover-text-red w3-text-white" href="https://github.com/pycdr/noisyrect">source</a></li>
+      <li><a class="w3-hover-text-red w3-text-white" href="https://t.me/pycdr">contact</a></li>
+    </ul>
+    <!--<ul class="w3-small w3-right">
+      <li><a class="w3-hover-text-red w3-text-white" href="https://github.com">1</a></li>
+      <li><a class="w3-hover-text-red w3-text-white" href="https://t.me/pycdr">2</a></li>
+    </ul>-->
+    <p class="w3-medium w3-text-white w3-center">created by <a href="https://www.github.com/pycdr" target="_top" class="w3-hover-text-green w3-sand">pycdr</a></p>
+  </footer>
+</div>
+</body>
+</html>
