@@ -18,6 +18,6 @@ compileSource(){
 	./noisyrect.pyc
 }
 echo '[*start*]'
-./noisyrect.pyc || compileSource() || cloneFromGit() || echo '[*error*] error when run game :('
+./noisyrect.pyc || compileSource || cloneFromGit || echo '[*error*] error when run game :('
 echo '[*end*] exit...'
 exit
