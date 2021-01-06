@@ -1,6 +1,14 @@
-__noisyrect__<br>
-hello my rect!<br>
-* I am small,<br>
-* I love python,<br>
-* I can jump!<br>
-* I can change my icon , with change "icon.ico" file. "icon.ico" is my icon and "music.wav" is my song!<br>
+# noisyrect
+**NoisyRect** is an open-source and pygame-based game.
+
+# how to use
+first, install pygame:
+```bash
+$ pip install pygame
+```
+then, run:
+```bash
+$ chmod +x noisyrect.pyc # just once
+$ ./noisyrect.pyc
+```
+
