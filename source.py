@@ -2,6 +2,7 @@ import pygame
 import random
 import webbrowser
 import sys
+from os.path import exists
 pygame.init()
 pygame.mixer.init()
 try:
@@ -26,16 +27,18 @@ except:
 	pass
 
 try:
-	font = pygame.font.SysFont('Lovelo',25)
-	losefont = pygame.font.SysFont('Lovelo',37)
-	helpfont = pygame.font.SysFont('Lovelo',20)
+	if exists("font.otf"):
+		font = pygame.font.Font('font.otf',25)
+		losefont = pygame.font.Font('font.otf',37)
+		helpfont = pygame.font.Font('font.otf',20)
+	else:
+		font = pygame.font.SysFont('Lovelo',25)
+		losefont = pygame.font.SysFont('Lovelo',37)
+		helpfont = pygame.font.SysFont('Lovelo',20)
 except:
-	try:
-		font = pygame.font.SysFont('font.otf',25)
-		losefont = pygame.font.SysFont('font.otf',37)
-		helpfont = pygame.font.SysFont('font.otf',20)
-	except:
-		sys.exit()
+	print("there is not any Lovelo font file or installed one!")
+	sys.exit()
+
 done = False
 start_menu = True
 apnd_num = 3
@@ -248,7 +251,7 @@ while not done:
 		display.blit(font.render("start", True, [255,255,255]),(360,290))
 		pygame.draw.circle(display, [255,0,0], [550,300], mball_rad)
 		pygame.draw.circle(display, [255,0,255], [550,300], 51,5)
-		display.blit(font.render("exit", True, [255,255,255]),(523,290))
+		display.blit(font.render("quit", True, [255,255,255]),(515,290))
 		pygame.draw.rect(display,[0,31,31],[70,395,670,30],2)
 		display.blit(font.render("press first word of button names to press it!", True, [0,0,0]),(83,400))
 	for event in pygame.event.get():
@@ -256,7 +259,7 @@ while not done:
 			done = True
 		elif event.type == pygame.KEYDOWN:
 			if start_menu:
-				if event.key == pygame.K_e:
+				if event.key == pygame.K_q:
 					done = True
 				elif event.key == pygame.K_s:
 					start_menu = not start_menu
